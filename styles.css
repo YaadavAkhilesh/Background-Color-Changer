@@ -1,0 +1,38 @@
+body {
+    transition: background-color 1s ease;
+}
+
+#start {
+    padding: 15px 30px;
+    margin: 10px;
+    font-weight: 700;
+    border-radius: 7px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#stop {
+    padding: 15px 30px;
+    margin: 10px;
+    font-weight: 700;
+    border-radius: 7px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Adding a shadow on hover */
+#start:hover, #stop:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Shadow appears on hover */
+}
+
+#start:active, #stop:active {
+    transform: translateY(2px); /* Press down effect on click */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Lighter shadow when clicked */
+}
